@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>LifeOS — مدير حياتي</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- شاشة التحميل -->
+<div id="boot" class="boot">
+  <div class="boot-logo">LifeOS</div>
+  <div class="spinner"></div>
+  <p id="boot-msg">جارٍ التهيئة...</p>
+</div>
+
+<!-- التطبيق -->
+<div id="app" class="app hidden">
+  <header class="header">
+    <button id="menu-btn" class="icon-btn">☰</button>
+    <h1>LifeOS</h1>
+    <div class="header-actions">
+      <span id="conn" class="conn"></span>
+      <button id="theme-btn" class="icon-btn">🌙</button>
+    </div>
+  </header>
+
+  <nav id="nav" class="nav">
+    <a href="#dashboard"     class="nav-link active">🏠 لوحة التحكم</a>
+    <a href="#tasks"         class="nav-link">✅ المهام</a>
+    <a href="#nutrition"     class="nav-link">🍽️ التغذية</a>
+    <a href="#water"         class="nav-link">💧 المياه</a>
+    <a href="#sleep"         class="nav-link">😴 النوم</a>
+    <a href="#gym"           class="nav-link">🏋️ الجيم</a>
+    <a href="#habits"        class="nav-link">🔁 العادات</a>
+    <a href="#expenses"      class="nav-link">💰 المصروفات</a>
+    <a href="#measurements"  class="nav-link">📏 القياسات</a>
+    <a href="#reports"       class="nav-link">📊 التقارير</a>
+    <a href="#settings"      class="nav-link">⚙️ الإعدادات</a>
+  </nav>
+
+  <main id="main" class="main"></main>
+
+  <div id="toasts" class="toasts"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
